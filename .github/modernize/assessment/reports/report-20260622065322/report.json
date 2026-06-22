@@ -1598,5 +1598,301 @@
         "os=linux"
       ]
     }
-  }
+  },
+  "security": [
+    {
+      "id": "CVE-2023-6378",
+      "title": "logback serialization vulnerability",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2023-6378](https://github.com/advisories/GHSA-vmq6-5m68-f53m): logback serialization vulnerability\n\nSeverity: HIGH\n\nAffected dependencies:\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n\nRecommended fix:\n  - Upgrade ch.qos.logback:logback-classic to 1.4.12 or later\n  - Upgrade ch.qos.logback:logback-classic to 1.3.12 or later\n  - Upgrade ch.qos.logback:logback-classic to 1.2.13 or later",
+      "evidence": {
+        "files": [
+          "pom.xml:86"
+        ],
+        "explanation": "[CVE-2023-6378](https://github.com/advisories/GHSA-vmq6-5m68-f53m): logback serialization vulnerability\n\nSeverity: HIGH\n\nAffected dependencies:\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n  - ch.qos.logback:logback-classic:1.2.3 (declared at pom.xml:86)\n\nRecommended fix:\n  - Upgrade ch.qos.logback:logback-classic to 1.4.12 or later\n  - Upgrade ch.qos.logback:logback-classic to 1.3.12 or later\n  - Upgrade ch.qos.logback:logback-classic to 1.2.13 or later"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2023-22102",
+      "title": "MySQL Connectors takeover vulnerability",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2023-22102](https://github.com/advisories/GHSA-m6vm-37g8-gqvh): MySQL Connectors takeover vulnerability\n\nSeverity: HIGH\n\nAffected dependencies:\n  - mysql:mysql-connector-java:5.1.47 (declared at pom.xml:48)\n",
+      "evidence": {
+        "files": [
+          "pom.xml:48"
+        ],
+        "explanation": "[CVE-2023-22102](https://github.com/advisories/GHSA-m6vm-37g8-gqvh): MySQL Connectors takeover vulnerability\n\nSeverity: HIGH\n\nAffected dependencies:\n  - mysql:mysql-connector-java:5.1.47 (declared at pom.xml:48)\n"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2023-24162",
+      "title": "Dromara Hutool Deserialization of Untrusted Data vulnerability",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2023-24162](https://github.com/advisories/GHSA-77h8-5j3h-jcjf): Dromara Hutool Deserialization of Untrusted Data vulnerability\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - cn.hutool:hutool-all:5.6.4 (declared at pom.xml:138)\n",
+      "evidence": {
+        "files": [
+          "pom.xml:138"
+        ],
+        "explanation": "[CVE-2023-24162](https://github.com/advisories/GHSA-77h8-5j3h-jcjf): Dromara Hutool Deserialization of Untrusted Data vulnerability\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - cn.hutool:hutool-all:5.6.4 (declared at pom.xml:138)\n"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2023-24163",
+      "title": "Dromara hutool vulnerable to SQL Injection",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2023-24163](https://github.com/advisories/GHSA-6c25-cxcc-pmc4): Dromara hutool vulnerable to SQL Injection\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - cn.hutool:hutool-all:5.6.4 (declared at pom.xml:138)\n\nRecommended fix:\n  - Upgrade cn.hutool:hutool-all to 5.8.21 or later",
+      "evidence": {
+        "files": [
+          "pom.xml:138"
+        ],
+        "explanation": "[CVE-2023-24163](https://github.com/advisories/GHSA-6c25-cxcc-pmc4): Dromara hutool vulnerable to SQL Injection\n\nSeverity: CRITICAL\n\nAffected dependencies:\n  - cn.hutool:hutool-all:5.6.4 (declared at pom.xml:138)\n\nRecommended fix:\n  - Upgrade cn.hutool:hutool-all to 5.8.21 or later"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2022-25845",
+      "title": "Unsafe deserialization in com.alibaba:fastjson",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2022-25845](https://github.com/advisories/GHSA-pv7h-hx5h-mgfj): Unsafe deserialization in com.alibaba:fastjson\n\nSeverity: HIGH\n\nAffected dependencies:\n  - com.alibaba:fastjson:1.2.74 (declared at pom.xml:169)\n\nRecommended fix:\n  - Upgrade com.alibaba:fastjson to 1.2.83 or later",
+      "evidence": {
+        "files": [
+          "pom.xml:169"
+        ],
+        "explanation": "[CVE-2022-25845](https://github.com/advisories/GHSA-pv7h-hx5h-mgfj): Unsafe deserialization in com.alibaba:fastjson\n\nSeverity: HIGH\n\nAffected dependencies:\n  - com.alibaba:fastjson:1.2.74 (declared at pom.xml:169)\n\nRecommended fix:\n  - Upgrade com.alibaba:fastjson to 1.2.83 or later"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2021-0341",
+      "title": "Square OkHttp can accept the wrong certificate",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2021-0341](https://github.com/advisories/GHSA-3cqm-mf7h-prrj): Square OkHttp can accept the wrong certificate\n\nSeverity: HIGH\n\nAffected dependencies:\n  - com.squareup.okhttp3:okhttp:4.9.1 (declared at pom.xml:310)\n\nRecommended fix:\n  - Upgrade com.squareup.okhttp3:okhttp to 4.9.2 or later",
+      "evidence": {
+        "files": [
+          "pom.xml:310"
+        ],
+        "explanation": "[CVE-2021-0341](https://github.com/advisories/GHSA-3cqm-mf7h-prrj): Square OkHttp can accept the wrong certificate\n\nSeverity: HIGH\n\nAffected dependencies:\n  - com.squareup.okhttp3:okhttp:4.9.1 (declared at pom.xml:310)\n\nRecommended fix:\n  - Upgrade com.squareup.okhttp3:okhttp to 4.9.2 or later"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CVE-2018-3258",
+      "title": "Improper Privilege Management in MySQL Connectors Java",
+      "category": "CVE",
+      "severity": "mandatory",
+      "description": "[CVE-2018-3258](https://github.com/advisories/GHSA-4vrv-ch96-6h42): Improper Privilege Management in MySQL Connectors Java\n\nSeverity: HIGH\n\nAffected dependencies:\n  - mysql:mysql-connector-java:5.1.47 (declared at pom.xml:48)\n\nRecommended fix:\n  - Upgrade mysql:mysql-connector-java to 8.0.13 or later",
+      "evidence": {
+        "files": [
+          "pom.xml:48"
+        ],
+        "explanation": "[CVE-2018-3258](https://github.com/advisories/GHSA-4vrv-ch96-6h42): Improper Privilege Management in MySQL Connectors Java\n\nSeverity: HIGH\n\nAffected dependencies:\n  - mysql:mysql-connector-java:5.1.47 (declared at pom.xml:48)\n\nRecommended fix:\n  - Upgrade mysql:mysql-connector-java to 8.0.13 or later"
+      },
+      "storyPoint": 1
+    },
+    {
+      "id": "CWE-681",
+      "title": "Incorrect Conversion between Numeric Types",
+      "category": "Code Quality",
+      "severity": "potential",
+      "description": "When converting from one data type to another, such as long to integer, data can be omitted or translated in a way that produces unexpected values. If the resulting values are used in a sensitive context, then dangerous behaviors may occur.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/importway/ImportByWxMp.java"
+        ],
+        "explanation": "In ImportByWxMp.java at lines 262 and 345, wxMpUserList.getTotal() returns a long value that is cast to int via (int) without bounds checking. If the total number of WeChat subscribers exceeds Integer.MAX_VALUE (2,147,483,647), the cast truncates the value, causing the progress bar maximum to be set incorrectly and potentially causing UI logic errors."
+      },
+      "storyPoint": 3
+    },
+    {
+      "id": "CWE-772",
+      "title": "Missing Release of Resource after Effective Lifetime",
+      "category": "Code Quality",
+      "severity": "potential",
+      "description": "The product does not release a resource after its effective lifetime has ended, i.e., after the resource is no longer needed.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/util/HikariUtil.java"
+        ],
+        "explanation": "In HikariUtil.java, the executeQuery() method (lines 61-63) creates a database Connection and PreparedStatement but returns the ResultSet to the caller without closing them. The caller receives only the ResultSet and has no way to close the underlying Connection and PreparedStatement, leading to connection pool resource exhaustion over time."
+      },
+      "storyPoint": 3
+    },
+    {
+      "id": "CWE-775",
+      "title": "Missing Release of File Descriptor or Handle after Effective Lifetime",
+      "category": "Code Quality",
+      "severity": "potential",
+      "description": "The product does not release a file descriptor or handle after its effective lifetime has ended, i.e., after the file descriptor/handle is no longer needed.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/TaskHisDetailDialog.java"
+        ],
+        "explanation": "In TaskHisDetailDialog.java (lines 148, 216, 284), DataInputStream is created wrapping a FileInputStream, then passed to CSVReader via InputStreamReader. Only the outer CSVReader (reader) is closed in the finally block. If the CSVReader or InputStreamReader constructor fails, the DataInputStream and FileInputStream are never closed, leaving file descriptors open."
+      },
+      "storyPoint": 3
+    },
+    {
+      "id": "CWE-1057",
+      "title": "Data Access Operations Outside of Expected Data Manager Component",
+      "category": "Code Quality",
+      "severity": "potential",
+      "description": "The product uses a dedicated, central data manager component as required by design, but it contains code that performs data-access operations that do not use this data manager.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/form/TaskForm.java"
+        ],
+        "explanation": "In TaskForm.java (lines 77-82), UI form classes directly instantiate and use MyBatis mapper objects (TTaskMapper, TPeopleMapper, TMsgMapper, etc.) obtained via MybatisUtil.getSqlSession().getMapper() to perform database operations. Data access is scattered across UI layer classes (TaskForm, PeopleEditForm, etc.) instead of being centralized in a dedicated data manager or service layer, violating separation of concerns."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-543",
+      "title": "Use of Singleton Pattern Without Synchronization in a Multithreaded Context",
+      "category": "Concurrency & Synchronization",
+      "severity": "potential",
+      "description": "The product uses the singleton pattern when creating a resource within a multithreaded environment.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/form/TaskForm.java"
+        ],
+        "explanation": "In TaskForm.java (lines 88-92), the getInstance() method checks 'if (taskForm == null)' and creates a new instance without any synchronization. The same unsynchronized singleton pattern exists in PeopleEditForm.java, MessageEditForm.java, and several other form classes. TaskRunThread.java calls TaskForm.getInstance() from a background thread (lines 284, 337, 395), creating a race condition where the singleton instance could be created multiple times or accessed in an inconsistent state."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-567",
+      "title": "Unsynchronized Access to Shared Data in a Multithreaded Context",
+      "category": "Concurrency & Synchronization",
+      "severity": "potential",
+      "description": "The product does not properly synchronize shared data, such as static variables across threads, which can lead to undefined behavior and unpredictable data changes.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/form/MessageManageForm.java"
+        ],
+        "explanation": "In MessageManageForm.java at line 50, the public static boolean 'accountSwitchComboBoxListenIgnore' is a shared mutable static field that is read and written from both the Swing EDT and background task threads without synchronization. Additionally, the static 'accountMap' field (line 44) is a Map shared across threads without any synchronization guard, potentially leading to ConcurrentModificationException or stale reads."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-820",
+      "title": "Missing Synchronization",
+      "category": "Concurrency & Synchronization",
+      "severity": "potential",
+      "description": "The product utilizes a shared resource in a concurrent manner but does not attempt to synchronize access to the resource.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/form/TaskForm.java"
+        ],
+        "explanation": "In TaskForm.java, the static singleton field 'taskForm' and mapper fields (taskMapper, taskHisMapper, peopleMapper, msgMapper at lines 77-82) are shared static resources accessed from both the Swing EDT and background TaskRunThread instances without any synchronization. The MyBatis SqlSession obtained via MybatisUtil.getSqlSession() is a single shared non-thread-safe session used concurrently from multiple threads through these static mapper references."
+      },
+      "storyPoint": 8
+    },
+    {
+      "id": "CWE-778",
+      "title": "Insufficient Logging",
+      "category": "Credentials & Secrets",
+      "severity": "potential",
+      "description": "When a security-critical event occurs, the product either does not record the event or omits important details about the event when logging it.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/importway/ImportByFile.java"
+        ],
+        "explanation": "The application has 44 occurrences of e.printStackTrace() across the codebase (e.g., ImportByFile.java lines 293, 307) instead of using the structured logger (log.error()). Security-critical failures such as file access errors, database connection failures, and message send failures are silently swallowed with only a console stack trace rather than being recorded in the application's security log. This makes post-incident analysis and security auditing difficult."
+      },
+      "storyPoint": 3
+    },
+    {
+      "id": "CWE-22",
+      "title": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+      "category": "File & Path Security",
+      "severity": "optional",
+      "description": "The product uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the product does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/importway/ImportByFile.java"
+        ],
+        "explanation": "In ImportByFile.java, the method importFromFile (line 127) accepts a filePath parameter obtained directly from user input (memberFilePathField.getText() at line 110) and passes it to new File(filePath) at line 136 without any canonicalization or path restriction check. A user can type an arbitrary path (e.g., ../../../etc/passwd) and the application will attempt to open it, bypassing any intended directory restriction."
+      },
+      "storyPoint": 8
+    },
+    {
+      "id": "CWE-23",
+      "title": "Relative Path Traversal",
+      "category": "File & Path Security",
+      "severity": "optional",
+      "description": "The product uses external input to construct a pathname that should be within a restricted directory, but it does not properly neutralize sequences such as .. that can resolve to a location that is outside of that directory.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/importway/ImportByFile.java"
+        ],
+        "explanation": "In ImportByFile.java at line 110-136, the filePath is taken from memberFilePathField.getText() and passed to new File(filePath) without neutralizing relative sequences such as '../'. An attacker could supply a path like '../../sensitive/file.csv' to read files outside any intended directory."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-36",
+      "title": "Absolute Path Traversal",
+      "category": "File & Path Security",
+      "severity": "optional",
+      "description": "The product uses external input to construct a pathname that should be within a restricted directory, but it does not properly neutralize absolute path sequences such as /abs/path that can resolve to a location that is outside of that directory.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/ui/dialog/importway/ImportByFile.java"
+        ],
+        "explanation": "In ImportByFile.java at line 110-136, the user-supplied filePath (from memberFilePathField.getText()) is used directly in new File(filePath) without restricting or validating absolute paths. A user can type an absolute path such as '/etc/passwd' or 'C:\\Windows\\System32\\config\\SAM' to access sensitive files outside any intended directory."
+      },
+      "storyPoint": 5
+    },
+    {
+      "id": "CWE-99",
+      "title": "Improper Control of Resource Identifiers ('Resource Injection')",
+      "category": "Injection Attacks",
+      "severity": "potential",
+      "description": "The product receives input from an upstream component, but it does not restrict or incorrectly restricts the input before it is used as an identifier for a resource that may be outside the intended sphere of control.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/logic/msgsender/HttpMsgSender.java"
+        ],
+        "explanation": "In HttpMsgSender.java (lines 87-229), the URL for HTTP requests is taken directly from user-configured message data (httpMsg.getUrl()) without restriction or validation. The URL is passed directly to HttpRequest.get/post/put/delete/patch/head/options and OkHttp's urlBuilder, allowing requests to arbitrary internal or external resources including internal services (SSRF)."
+      },
+      "storyPoint": 3
+    },
+    {
+      "id": "CWE-502",
+      "title": "Deserialization of Untrusted Data",
+      "category": "Injection Attacks",
+      "severity": "mandatory",
+      "description": "The product deserializes untrusted data without sufficiently ensuring that the resulting data will be valid.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/util/UpgradeUtil.java"
+        ],
+        "explanation": "In UpgradeUtil.java at lines 36 and 45, remote JSON content is fetched via HTTP from a GitHub URL (UiConsts.CHECK_VERSION_URL) and immediately deserialized using fastjson 1.2.74 (JSON.parseObject). Fastjson 1.2.74 is affected by CVE-2022-25845 (unsafe deserialization), meaning that a compromised or man-in-the-middle server response containing a malicious '@type' field could trigger arbitrary code execution during deserialization."
+      },
+      "storyPoint": 13
+    },
+    {
+      "id": "CWE-672",
+      "title": "Operation on a Resource after Expiration or Release",
+      "category": "Memory Safety",
+      "severity": "potential",
+      "description": "The product uses, accesses, or otherwise operates on a resource after that resource has been expired, released, or revoked.",
+      "evidence": {
+        "files": [
+          "src/main/java/com/fangxuele/tool/push/util/HikariUtil.java"
+        ],
+        "explanation": "In HikariUtil.java, the executeQuery() method (lines 61-63) opens a database connection and PreparedStatement but returns the ResultSet without closing the PreparedStatement or Connection. Callers that use the ResultSet cannot properly close the underlying Connection, causing connection pool resources to be held open after the ResultSet is consumed. This constitutes operating on a resource (connection pool slot) after the intended use scope has ended."
+      },
+      "storyPoint": 5
+    }
+  ]
 }

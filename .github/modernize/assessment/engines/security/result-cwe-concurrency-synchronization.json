@@ -1,0 +1,92 @@
+{
+  "input_name": "CWE - Concurrency & Synchronization",
+  "analysis_method": "LLM",
+  "status": "success",
+  "result": {
+    "finding": "Assessed 6 CWE rules in Concurrency & Synchronization: 3 FOUND, 3 NOT_FOUND",
+    "confidence": "high",
+    "evidence": ["Scanned application source files for concurrency & synchronization patterns"],
+    "values": [
+      {
+        "id": "CWE-543",
+        "name": "Use of Singleton Pattern Without Synchronization in a Multithreaded Context",
+        "status": "FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 5,
+        "description": "The product uses the singleton pattern when creating a resource within a multithreaded environment.",
+        "evidence": {
+          "files": ["src/main/java/com/fangxuele/tool/push/ui/form/TaskForm.java"],
+          "explanation": "In TaskForm.java (lines 88-92), the getInstance() method checks 'if (taskForm == null)' and creates a new instance without any synchronization. The same unsynchronized singleton pattern exists in PeopleEditForm.java, MessageEditForm.java, and several other form classes. TaskRunThread.java calls TaskForm.getInstance() from a background thread (lines 284, 337, 395), creating a race condition where the singleton instance could be created multiple times or accessed in an inconsistent state."
+        }
+      },
+      {
+        "id": "CWE-567",
+        "name": "Unsynchronized Access to Shared Data in a Multithreaded Context",
+        "status": "FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 5,
+        "description": "The product does not properly synchronize shared data, such as static variables across threads, which can lead to undefined behavior and unpredictable data changes.",
+        "evidence": {
+          "files": ["src/main/java/com/fangxuele/tool/push/ui/form/MessageManageForm.java"],
+          "explanation": "In MessageManageForm.java at line 50, the public static boolean 'accountSwitchComboBoxListenIgnore' is a shared mutable static field that is read and written from both the Swing EDT and background task threads without synchronization. Additionally, the static 'accountMap' field (line 44) is a Map shared across threads without any synchronization guard, potentially leading to ConcurrentModificationException or stale reads."
+        }
+      },
+      {
+        "id": "CWE-662",
+        "name": "Improper Synchronization",
+        "status": "NOT_FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 8,
+        "description": "The product utilizes multiple threads or processes to allow temporary access to a shared resource that can only be exclusive to one process at a time, but it does not properly synchronize these actions, which might cause simultaneous accesses of this resource by multiple threads or processes.",
+        "evidence": {
+          "files": [],
+          "explanation": ""
+        }
+      },
+      {
+        "id": "CWE-667",
+        "name": "Improper Locking",
+        "status": "NOT_FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 8,
+        "description": "The product does not properly acquire or release a lock on a resource, leading to unexpected resource state changes and behaviors.",
+        "evidence": {
+          "files": [],
+          "explanation": ""
+        }
+      },
+      {
+        "id": "CWE-820",
+        "name": "Missing Synchronization",
+        "status": "FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 8,
+        "description": "The product utilizes a shared resource in a concurrent manner but does not attempt to synchronize access to the resource.",
+        "evidence": {
+          "files": ["src/main/java/com/fangxuele/tool/push/ui/form/TaskForm.java"],
+          "explanation": "In TaskForm.java, the static singleton field 'taskForm' and mapper fields (taskMapper, taskHisMapper, peopleMapper, msgMapper at lines 77-82) are shared static resources accessed from both the Swing EDT and background TaskRunThread instances without any synchronization. The MyBatis SqlSession obtained via MybatisUtil.getSqlSession() is a single shared non-thread-safe session used concurrently from multiple threads through these static mapper references."
+        }
+      },
+      {
+        "id": "CWE-821",
+        "name": "Incorrect Synchronization",
+        "status": "NOT_FOUND",
+        "category": "Concurrency & Synchronization",
+        "severity": "potential",
+        "storyPoint": 8,
+        "description": "The product utilizes a shared resource in a concurrent manner, but it does not correctly synchronize access to the resource.",
+        "evidence": {
+          "files": [],
+          "explanation": ""
+        }
+      }
+    ]
+  },
+  "execution_time_seconds": 0,
+  "timestamp": ""
+}
